@@ -1,4 +1,4 @@
-# pin-versions
+# PynCushion
 
 A CLI tool and pre-commit hook that pins all unpinned dependencies in `pyproject.toml` to their currently installed versions.
 
