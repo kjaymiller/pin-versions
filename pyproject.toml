@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=64", "setuptools-scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pin-versions"
+dynamic = ["version"]
+description = "Pin all dependencies in pyproject.toml to their currently installed versions"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [
+    {name = "Jay Miller"},
+]
+dependencies = [
+    "tomlkit",
+    "click",
+    "httpx",
+]
+
+[project.scripts]
+pin-versions = "pin_versions:main"
+
+[tool.setuptools-scm]
+
+[tool.setuptools]
+py-modules = ["pin_versions"]
